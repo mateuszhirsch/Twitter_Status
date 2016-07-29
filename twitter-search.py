@@ -32,7 +32,7 @@ since_id = 1;
 
 while (1):
     query = twitter.search.tweets(q = "golang", count = 100, since_id = since_id)
-
+    print(since_id)
 
 #-----------------------------------------------------------------------
 # Loop through each of the results, and print its content.
@@ -57,6 +57,6 @@ while (1):
     with open('data.txt', 'w') as outfile:
         json.dump(data, outfile)
     
-    time.sleep(2)
+    time.sleep(5)
 
     
